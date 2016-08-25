@@ -1,9 +1,10 @@
 var SandwichMaker = (function(){
 
-  return{
+var totalPrice = 0;
 
-
-
+  return {
+    addTopping: function(toppingPrice) {
+      totalPrice += toppingPrice;
     }
-
+  }
 })();
