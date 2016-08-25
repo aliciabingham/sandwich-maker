@@ -1,10 +1,10 @@
-console.log(SandwichMaker.getMeatOptions());
+console.log(SandwichMaker.breadPrices());
 
-console.log(SandwichMaker.getBreadTypes());
+console.log(SandwichMaker.meatPrices());
 
-console.log(SandwichMaker.getCheeseTypes());
+console.log(SandwichMaker.cheesePrices());
 
-console.log(SandwichMaker.getCondiments());
+console.log(SandwichMaker.condimentPrices());
 
-console.log(SandwichMaker.getVeggies());
+console.log(SandwichMaker.veggiePrices());
 
