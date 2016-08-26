@@ -1,13 +1,3 @@
-console.log(SandwichMaker.breadPrices());
-
-console.log(SandwichMaker.meatPrices());
-
-console.log(SandwichMaker.cheesePrices());
-
-console.log(SandwichMaker.condimentPrices());
-
-console.log(SandwichMaker.veggiePrices());
-
 var finalSandwichPrice = 0;
 var topping;
 
@@ -28,16 +18,15 @@ function getPrice(objectArray, topping) {
 breadoptions.addEventListener('change', function(e){
   topping = e.target.value;
 
-
-finalSandwichPrice += getPrice(SandwichMaker.breadPrices(), topping);
-document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+  finalSandwichPrice += getPrice(SandwichMaker.breadPrices(), topping);
+  document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
 })
 
 meatoptions.addEventListener('change', function(e){
   topping = e.target.value;
 
-finalSandwichPrice += getPrice(SandwichMaker.meatPrices(), topping);
-document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+  finalSandwichPrice += getPrice(SandwichMaker.meatPrices(), topping);
+  document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
 })
 
 cheeseoptions.addEventListener('change', function(e){
@@ -54,24 +43,9 @@ condiments.addEventListener('change', function(e){
   document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
  })
 
-
 veggiesoptions.addEventListener('change', function(e){
   topping = e.target.value;
 
   finalSandwichPrice += getPrice(SandwichMaker.veggiePrices(), topping);
   document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
  })
-
-
-
-
-
-
-
-
-
-
-
-
-
-

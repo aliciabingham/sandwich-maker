@@ -9,6 +9,5 @@ vegetables.veggiePrices = function(){
   return vegOptions;
 }
 
-
 return vegetables;
 })(SandwichMaker || {});
