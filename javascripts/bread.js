@@ -1,5 +1,5 @@
 var SandwichMaker = (function(breadTypes){
-var breadSelection = {"wheat": 1.25, "french":1.25, "lettuce wrap": 1.00}
+var breadSelection = {"wheat": 1.25, "french": 1.25, "lettucewrap": 1.00}
 
 breadTypes.addBread = function(newBread) {
   breadSelection.push(newBread);

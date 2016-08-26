@@ -28,8 +28,50 @@ function getPrice(objectArray, topping) {
 breadoptions.addEventListener('change', function(e){
   topping = e.target.value;
 
-  var finalSandwichPrice1 = parseInt(finalSandwichPrice);
 
-finalSandwichPrice1 += getPrice(SandwichMaker.breadPrices(), topping);
-document.getElementById("output").value = "$" + finalSandwichPrice1.toFixed(2);
+finalSandwichPrice += getPrice(SandwichMaker.breadPrices(), topping);
+document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
 })
+
+meatoptions.addEventListener('change', function(e){
+  topping = e.target.value;
+
+finalSandwichPrice += getPrice(SandwichMaker.meatPrices(), topping);
+document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+})
+
+cheeseoptions.addEventListener('change', function(e){
+  topping = e.target.value;
+
+  finalSandwichPrice += getPrice(SandwichMaker.cheesePrices(), topping);
+  document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+ })
+
+condiments.addEventListener('change', function(e){
+  topping = e.target.value;
+
+  finalSandwichPrice += getPrice(SandwichMaker.condimentPrices(), topping);
+  document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+ })
+
+
+veggiesoptions.addEventListener('change', function(e){
+  topping = e.target.value;
+
+  finalSandwichPrice += getPrice(SandwichMaker.veggiePrices(), topping);
+  document.getElementById("output").value = "$" + finalSandwichPrice.toFixed(2);
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
